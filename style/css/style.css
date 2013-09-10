@@ -29,6 +29,12 @@ body {
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out; }
+  .lts .lts-header .activeTab {
+    color: white;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out; }
   .lts .lts-header .lts-menu li:first-child {
     margin-left: 50px; }
   .lts .lts-header .lts-menu-social {
@@ -58,17 +64,101 @@ body {
 .lts .lts-body {
   height: 94%;
   width: 100%;
-  background: url(../../resources/pic/Ignite_1000x1000.jpg);
+  background: url(../../resources/pic/bg.jpg);
   background-size: 100% 100%; }
+  .lts .lts-body .lts-home-cont {
+    background: rgba(0, 0, 0, 0.6);
+    font-size: 19px;
+    color: #DBDBDB;
+    padding: 20px;
+    padding-bottom: 50px; }
+    .lts .lts-body .lts-home-cont div:nth-child(2) {
+      padding-top: 15px; }
   .lts .lts-body .lts-news {
     width: 25%;
     height: 340px;
-    background: gray;
     background: rgba(0, 0, 0, 0.6);
     position: fixed;
     bottom: 0;
     right: 0;
     color: white; }
+  .lts .lts-body .lts-contact {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 25px; }
+    .lts .lts-body .lts-contact a:first-child {
+      color: white;
+      font-size: 22px; }
+    .lts .lts-body .lts-contact a {
+      color: goldenrod; }
+  .lts .lts-body .lts-music {
+    padding: 5px;
+    width: 100%;
+    height: 300px;
+    background: gray;
+    background: rgba(0, 0, 0, 0.6);
+    color: white; }
+    .lts .lts-body .lts-music div {
+      color: goldenrod;
+      font-size: 22px;
+      margin-bottom: 5px; }
+    .lts .lts-body .lts-music ul {
+      margin-bottom: 5px; }
+  .lts .lts-body .lts-menu-buy {
+    float: left;
+    height: 35px;
+    width: 100%;
+    margin: 0;
+    padding: 0px 0px 0px 0px;
+    list-style: none;
+    line-height: normal;
+    font-size: 23px; }
+  .lts .lts-body .lts-menu-buy li {
+    float: left;
+    height: 100%;
+    width: 35px; }
+  .lts .lts-body .amazon-icon {
+    background: url(../../resources/pic/amazon.png); }
+  .lts .lts-body .googleplay-icon {
+    background: url(../../resources/pic/googleplay.png); }
+  .lts .lts-body .spotify-icon {
+    background: url(../../resources/pic/spotify.png); }
+  .lts .lts-body .itunes-icon {
+    background: url(../../resources/pic/itunes.png); }
+  .lts .lts-body .amazon-icon, .lts .lts-body .googleplay-icon, .lts .lts-body .spotify-icon, .lts .lts-body .itunes-icon {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%; }
+  .lts .lts-body .button {
+    background: #7f821d;
+    background: -webkit-gradient(linear, left top, left bottom, from(#dbc11b), to(#7f821d));
+    background: -webkit-linear-gradient(top, #dbc11b, #7f821d);
+    background: -moz-linear-gradient(top, #dbc11b, #7f821d);
+    background: -ms-linear-gradient(top, #dbc11b, #7f821d);
+    background: -o-linear-gradient(top, #dbc11b, #7f821d);
+    padding: 9px 18px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: black 0 1px 0;
+    -moz-box-shadow: black 0 1px 0;
+    box-shadow: black 0 1px 0;
+    text-shadow: rgba(0, 0, 0, 0.4) 0 1px 0;
+    color: white;
+    font-size: 21px;
+    font-family: Georgia, serif;
+    text-decoration: none;
+    vertical-align: middle;
+    border: 0px; }
+  .lts .lts-body .button:hover {
+    background: #5c5e24;
+    color: #ccc; }
+  .lts .lts-body .contactName, .lts .lts-body .contactEmail, .lts .lts-body .contactSubject {
+    width: 351px; }
+  .lts .lts-body .contactNote {
+    width: 702px;
+    height: 179px;
+    resize: none; }
 .lts .lts-footer {
   height: 3%;
   width: 100%;
@@ -76,3 +166,154 @@ body {
   color: #595959;
   text-align: center;
   position: fixed; }
+
+/*
+Animate.css - http://daneden.me/animate
+LICENSED UNDER THE  MIT LICENSE (MIT)
+
+Copyright (c) 2012 Dan Eden
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*/
+.animated {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s; }
+
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -ms-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  animation-duration: 2s; }
+
+@-webkit-keyframes bounceInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(2000px); }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(-30px); }
+
+  80% {
+    -webkit-transform: translateX(10px); }
+
+  100% {
+    -webkit-transform: translateX(0); } }
+
+@-moz-keyframes bounceInRight {
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(2000px); }
+
+  60% {
+    opacity: 1;
+    -moz-transform: translateX(-30px); }
+
+  80% {
+    -moz-transform: translateX(10px); }
+
+  100% {
+    -moz-transform: translateX(0); } }
+
+@-o-keyframes bounceInRight {
+  0% {
+    opacity: 0;
+    -o-transform: translateX(2000px); }
+
+  60% {
+    opacity: 1;
+    -o-transform: translateX(-30px); }
+
+  80% {
+    -o-transform: translateX(10px); }
+
+  100% {
+    -o-transform: translateX(0); } }
+
+@keyframes bounceInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(2000px); }
+
+  60% {
+    opacity: 1;
+    transform: translateX(-30px); }
+
+  80% {
+    transform: translateX(10px); }
+
+  100% {
+    transform: translateX(0); } }
+
+.bounceInRight {
+  -webkit-animation-name: bounceInRight;
+  -moz-animation-name: bounceInRight;
+  -o-animation-name: bounceInRight;
+  animation-name: bounceInRight; }
+
+@-webkit-keyframes bounceOutLeft {
+  0% {
+    -webkit-transform: translateX(0); }
+
+  20% {
+    opacity: 1;
+    -webkit-transform: translateX(20px); }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(-2000px); } }
+
+@-moz-keyframes bounceOutLeft {
+  0% {
+    -moz-transform: translateX(0); }
+
+  20% {
+    opacity: 1;
+    -moz-transform: translateX(20px); }
+
+  100% {
+    opacity: 0;
+    -moz-transform: translateX(-2000px); } }
+
+@-o-keyframes bounceOutLeft {
+  0% {
+    -o-transform: translateX(0); }
+
+  20% {
+    opacity: 1;
+    -o-transform: translateX(20px); }
+
+  100% {
+    opacity: 0;
+    -o-transform: translateX(-2000px); } }
+
+@keyframes bounceOutLeft {
+  0% {
+    transform: translateX(0); }
+
+  20% {
+    opacity: 1;
+    transform: translateX(20px); }
+
+  100% {
+    opacity: 0;
+    transform: translateX(-2000px); } }
+
+.bounceOutLeft {
+  -webkit-animation-name: bounceOutLeft;
+  -moz-animation-name: bounceOutLeft;
+  -o-animation-name: bounceOutLeft;
+  animation-name: bounceOutLeft; }
