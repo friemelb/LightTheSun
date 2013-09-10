@@ -66,13 +66,19 @@ body {
   width: 100%;
   background: url(../../resources/pic/bg.jpg);
   background-size: 100% 100%; }
-  .lts .lts-body .lts-home-cont {
+  .lts .lts-body .lts-cd {
+    background: black;
+    color: goldenrod;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 23px; }
+  .lts .lts-body .lts-bio-cont {
     background: rgba(0, 0, 0, 0.6);
     font-size: 19px;
     color: #DBDBDB;
     padding: 20px;
     padding-bottom: 50px; }
-    .lts .lts-body .lts-home-cont div:nth-child(2) {
+    .lts .lts-body .lts-bio-cont div:nth-child(2) {
       padding-top: 15px; }
   .lts .lts-body .lts-news {
     width: 25%;

@@ -1,4 +1,6 @@
 $('.lts-header ul li').click(function (event) {	
+console.log('ere');
+
 	//change selected tab
     var selected = $(".lts-header ul").find('.activeTab').get(0);
     $(selected).removeClass('activeTab');
@@ -41,6 +43,14 @@ $('.lts-header ul li').click(function (event) {
 		$.ajax({
 		  type: "POST",
 		  url: "php/contact.php"
+		}).done(function( msg ) {
+		  $('.lts-body').html(msg);
+		});
+		break;
+		case 'bio':
+		$.ajax({
+		  type: "POST",
+		  url: "php/bio.php"
 		}).done(function( msg ) {
 		  $('.lts-body').html(msg);
 		});
