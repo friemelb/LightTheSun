@@ -41,6 +41,7 @@ body{
 		}
 		.lts-menu li:hover{
 			color: white;
+			cursor: pointer;
 			-webkit-transition: all 0.3s ease-in-out;
 			-moz-transition: all 0.3s ease-in-out;
 			-ms-transition: all 0.3s ease-in-out;
@@ -58,7 +59,8 @@ body{
 		}
 
 		.lts-menu li:first-child{
-			margin-left:50px; 
+			color: goldenrod;
+			font-size: $headerFontSize;
 		}
 
 		.lts-menu-social{
@@ -102,6 +104,51 @@ body{
 		width: 100%;
 		background: url(../../resources/pic/bg.jpg);
 		background-size: 100% 100%;
+		.lts-home{
+			height: 100%;
+			width: 100%;
+			background: gray;
+			background: rgba(0,0,0,.6);
+			color: white;
+			.lts-home-second-row{
+				clear: both;
+			}
+			.lts-home-bio{
+				float: left;
+				width: 60%;
+				height: 50%;
+				font-size: 21px;
+				div:first-child{
+					padding-bottom: 10px;
+				}
+			}
+			.lts-home-pic{
+				background: yellow;
+				float: right;
+				width: 36%;
+				height: 50%;
+				//background: url(../../resources/pic/IMG_3683.jpg);
+				background: url(../../resources/pic/Ignite_1000x1000.jpg);
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: right center;
+			}
+			.lts-home-cd{
+				float: left;
+				width: 73%;
+				height: 50%;
+				//background: url(../../resources/pic/Ignite_1000x1000.jpg);
+				background: url(../../resources/pic/IMG_3683.jpg);
+				background-size: contain;
+				background-repeat: no-repeat;
+			}
+			.lts-home-twitter{
+				float: left;
+				width: 27%;
+				height: 50%;
+
+			}
+		}
 		.lts-cd{
 			background: $headerColor;
 			color: goldenrod;
@@ -127,6 +174,16 @@ body{
 		    bottom: 0;
 		    right: 0;
 		    color: white;
+		}
+		.lts-cd{
+			width: 25%;
+			height: 340px;
+			background: rgba(0,0,0,.6);
+			position: fixed;
+		    bottom: 0;
+		    background: url(../../resources/pic/Ignite_1000x1000.jpg);
+			background-size: contain;
+			background-repeat: no-repeat;
 		}
 		.lts-contact{
 			background: rgba(0,0,0,.6);

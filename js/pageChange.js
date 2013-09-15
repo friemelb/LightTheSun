@@ -1,13 +1,11 @@
 $('.lts-header ul li').click(function (event) {	
-console.log('ere');
-
 	//change selected tab
     var selected = $(".lts-header ul").find('.activeTab').get(0);
     $(selected).removeClass('activeTab');
     $(this).addClass('activeTab');
 	
 	switch($(this).text().toLowerCase()){
-		case 'home':
+		case 'light the sun':
 		$.ajax({
 		  type: "POST",
 		  url: "php/home.php"

@@ -25,6 +25,7 @@ body {
     border: 0px; }
   .lts .lts-header .lts-menu li:hover {
     color: white;
+    cursor: pointer;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
@@ -36,7 +37,8 @@ body {
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out; }
   .lts .lts-header .lts-menu li:first-child {
-    margin-left: 50px; }
+    color: goldenrod;
+    font-size: 23px; }
   .lts .lts-header .lts-menu-social {
     float: right;
     height: 100%;
@@ -66,6 +68,41 @@ body {
   width: 100%;
   background: url(../../resources/pic/bg.jpg);
   background-size: 100% 100%; }
+  .lts .lts-body .lts-home {
+    height: 100%;
+    width: 100%;
+    background: gray;
+    background: rgba(0, 0, 0, 0.6);
+    color: white; }
+    .lts .lts-body .lts-home .lts-home-second-row {
+      clear: both; }
+    .lts .lts-body .lts-home .lts-home-bio {
+      float: left;
+      width: 60%;
+      height: 50%;
+      font-size: 21px; }
+      .lts .lts-body .lts-home .lts-home-bio div:first-child {
+        padding-bottom: 10px; }
+    .lts .lts-body .lts-home .lts-home-pic {
+      background: yellow;
+      float: right;
+      width: 36%;
+      height: 50%;
+      background: url(../../resources/pic/Ignite_1000x1000.jpg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: right center; }
+    .lts .lts-body .lts-home .lts-home-cd {
+      float: left;
+      width: 73%;
+      height: 50%;
+      background: url(../../resources/pic/IMG_3683.jpg);
+      background-size: contain;
+      background-repeat: no-repeat; }
+    .lts .lts-body .lts-home .lts-home-twitter {
+      float: left;
+      width: 27%;
+      height: 50%; }
   .lts .lts-body .lts-cd {
     background: black;
     color: goldenrod;
@@ -88,6 +125,15 @@ body {
     bottom: 0;
     right: 0;
     color: white; }
+  .lts .lts-body .lts-cd {
+    width: 25%;
+    height: 340px;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    bottom: 0;
+    background: url(../../resources/pic/Ignite_1000x1000.jpg);
+    background-size: contain;
+    background-repeat: no-repeat; }
   .lts .lts-body .lts-contact {
     background: rgba(0, 0, 0, 0.6);
     padding: 25px; }
