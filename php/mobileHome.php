@@ -1,6 +1,15 @@
 <?php
 //build html
 	$html = <<<HTML
+	<div class='lts-mobile'>		
+			<ul class='lts-mobile-menu'>
+				<li class='lts-bandName'>Light The Sun</li>
+				<li>Gigs</li>
+				<li>Music</li>
+				<li>Social</li>
+			</ul>
+		
+		<div class='lts-mobile-body'>
 			<div class='lts-mobile-bio-cont'>
 				<div class='lts-mobile-bio-cont-header'>
 					About
@@ -16,6 +25,8 @@
 				</div>
 			</div>
 		</div>
+		<div class='lts-mobile-footer'>Powered by: Muddy Water Software</div>
+	</div>
 HTML;
 
 	echo($html);
