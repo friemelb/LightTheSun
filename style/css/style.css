@@ -1,5 +1,7 @@
 body {
-  margin: 0px; }
+  margin: 0px; 
+  background: url(../../resources/pic/bg.jpg);
+  background-size: 100% 100%; }
 
 .lts .lts-header {
   height: 3.5%;
@@ -66,8 +68,7 @@ body {
 .lts .lts-body {
   height: 94%;
   width: 100%;
-  background: url(../../resources/pic/bg.jpg);
-  background-size: 100% 100%; }
+}
   .lts .lts-body .lts-home {
     height: 100%;
     width: 100%;
